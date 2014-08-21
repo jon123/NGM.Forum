@@ -85,7 +85,7 @@
     </div>
     <div>
         <h2>@T("Thread Read Display")</h2>
-        <p>@T("Any threads older than this number of days are automatically displayed as read.  When a user reads a forum a record tracks the date it was last read.  This setting prunes records older than the the given number of days. To reduce the database size and increase performance it is recommended to use a lower number on a busy forum and a larger number on a slow forum.  The default is 30 days.")</p>               
+        <p>@T("Any threads older than this number of days are by default displayed as read.  When a user reads a forum a record tracks the date it was last read.  This setting prunes records older than the the given number of days. To reduce the database size and increase performance it is recommended to use a lower number on a busy forum and a larger number on a slow forum.  The default is 30 days.")</p>               
 
         @Html.LabelFor(m => m.DaysUntilThreadReadByDefault)
         @Html.EditorFor(m => m.DaysUntilThreadReadByDefault)
