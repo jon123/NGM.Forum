@@ -59,9 +59,10 @@ namespace NGM.Forum.Models {
         public ForumsSettingsPartRecord()
         {
             //set some defaults if not already set
-            if (this.ThreadTitleMaximumLength == 0) this.ThreadTitleMaximumLength = 200;
-            if (this.ForumsHomeTitleMaximumLength == 0) this.ForumsHomeTitleMaximumLength = 30;
-            if (this.CategoryTitleMaximumLength == 0) this.CategoryTitleMaximumLength = 30;
+            if (this.ThreadTitleMaximumLength <= 0) this.ThreadTitleMaximumLength = 200;
+            if (this.ForumsHomeTitleMaximumLength <= 0) this.ForumsHomeTitleMaximumLength = 30;
+            if (this.CategoryTitleMaximumLength <= 0) this.CategoryTitleMaximumLength = 30;
+            if (this.DaysUntilThreadReadByDefault <= 0) this.DaysUntilThreadReadByDefault = 30;
         }
 
         public virtual int ForumsHomeTitleMaximumLength { get; set; }

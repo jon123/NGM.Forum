@@ -476,8 +476,8 @@ namespace NGM.Forum {
         {
             SchemaBuilder.AlterTable("ForumsSettingsPartRecord",
                  table => table
-                     //default to one month
-                     .AddColumn<int>("DaysUntilThreadReadByDefault", column=>column.WithDefault( 30 ))
+                     //default to one month set in the model
+                     .AddColumn<int>("DaysUntilThreadReadByDefault")
             );
 
             return 22;
