@@ -85,11 +85,11 @@
     </div>
     <div>
         <h2>@T("Thread Read Display")</h2>
-        <p>@T("Any threads older than this date are automatically displayed as read.  Internally this setting controls the tracking of the last read date on individual threads and is used to prune records older than the given number of days. On a busy forum is it recommended that the number of days is kept smaller and on a slower forum it can be increased")</p>               
+        <p>@T("Any threads older than this number of days are automatically displayed as read.  When a user reads a forum a record tracks the date it was last read.  This setting prunes records older than the the given number of days. To reduce the database size and increase performance it is recommended to use a lower number on a busy forum and a larger number on a slow forum.  The default is 30 days.")</p>               
 
         @Html.LabelFor(m => m.DaysUntilThreadReadByDefault)
         @Html.EditorFor(m => m.DaysUntilThreadReadByDefault)
         @Html.ValidationMessage("DaysUntilThreadReadByDefault", "*")
-        <span class="hint">@T("Truncate the thread url to this length if the title is longer than the value.  Enter 0 to allow url length to match title length.")</span>
+        
     </div>
 </fieldset>
