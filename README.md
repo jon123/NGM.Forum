@@ -4,7 +4,8 @@ NGM.Forum
 Provides Orchard CMS with a bare bones fully working forum
 
 Original Documentation: https://github.com/Jetski5822/NGM.Forum/wiki
-New Documentation: Not yet sorry.
+
+New Documentation: see the wiki.
 
 - A more functionally complete forum for Orchard CMS.  
 - The theme boostrap 3.x based, made using the PJS.Bootstrap Theme for 1.7.  It may require some tweaking depending on the Orchard Theme used.
